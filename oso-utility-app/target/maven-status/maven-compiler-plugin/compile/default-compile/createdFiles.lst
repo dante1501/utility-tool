@@ -1,0 +1,6 @@
+com\tool\osoutilityapp\controller\UtilityController.class
+com\tool\osoutilityapp\customconfig\model\Content.class
+com\tool\osoutilityapp\exception\CustomizeException.class
+com\tool\osoutilityapp\model\UIElements.class
+com\tool\osoutilityapp\customconfig\SectionConfigurations.class
+com\tool\osoutilityapp\OsoUtilityAppApplication.class

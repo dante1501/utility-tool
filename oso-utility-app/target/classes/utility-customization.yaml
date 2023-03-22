@@ -1,0 +1,7 @@
+utility:
+  customization:
+    section:
+      headerSection:
+        content:
+          displayName: "Gerrit"
+          link: "#"

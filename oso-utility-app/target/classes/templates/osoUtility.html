@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSO-Utility-Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="query.js"></script>
+</head>
+<body>
+<div class="mainContainer">
+    <!--Header Section Navigation Bar-->
+    <nav class="navbar">
+        <header>
+            <!-- Left side Logo  -->
+            <img class="logo" src="logo2.png" alt="logo">
+            <!--Top Middle Navigation Bar-->
+            <nav>
+                <ul class="nav_links">
+                    <li><a th:href="#{confPage}" target="_blank">Confluence</a></li>
+                    <li><a th:href="#{jenkinsPage}" target="_blank">Jenkins</a></li>
+                    <li><a th:href="#{gerritPage}" target="_blank">Gerrit</a></li>
+                    <li><a th:href="#{amdocsSupportPage}" target="_blank">Amdocs Support</a></li>
+                </ul>
+            </nav>
+            <a class="cta" th:href="#{joinDaliy}" target="_blank"><button>Join Daily</button></a>
+        </header>
+    </nav>
+
+    <!-------Main Section Middle Area--------->
+    <main class="main">
+        <h2 th:text="${sectionHeadingMain}" class="boxmiddleHeading"></h2>
+        <div class="middlecontentsection1">
+            <div class="sec1box">
+                <div th:text="${element1}" class="sechead"></div>
+                <ul class="sec_links">
+                    <li><a th:text="${btne1}" th:href="@{'https://'+ #{dev} +'/snow'}" target="_blank"></a></li>
+                    <li><a th:text="${btne2}" th:href="@{'https://'+ #{fs0} +'/snow'}" target="_blank"></a></li>
+                    <li><a th:text="${btne3}" th:href="@{'https://'+ #{fs1} +'/snow'}" target="_blank"></a></li>
+                    <li><a th:text="${btne4}" th:href="@{'https://'+ #{fs2} +'/snow'}" target="_blank"></a></li>
+                    <li><a th:text="${btne5}" th:href="@{'https://'+ #{fs3} +'/snow'}" target="_blank"></a></li>
+                    <li><a th:text="${btne6}" th:href="@{'https://'+ #{fs4} +'/snow'}" target="_blank"></a></li>
+                    <li><a th:text="${btne7}" th:href="@{'https://'+ #{ca} +'/snow'}" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div class="sec2box">
+                <div th:text="${element2}" class="sechead"></div>
+                <ul class="sec_links">
+                    <li><a th:text="${btne1}" th:href="@{'https://'+ #{dev} +'/portal'}" target="_blank"></a></li>
+                    <li><a th:text="${btne2}" th:href="@{'https://'+ #{fs0} +'/portal'}" target="_blank"></a></li>
+                    <li><a th:text="${btne3}" th:href="@{'https://'+ #{fs1} +'/portal'}" target="_blank"></a></li>
+                    <li><a th:text="${btne4}" th:href="@{'https://'+ #{fs2} +'/portal'}" target="_blank"></a></li>
+                    <li><a th:text="${btne5}" th:href="@{'https://'+ #{fs3} +'/portal'}" target="_blank"></a></li>
+                    <li><a th:text="${btne6}" th:href="@{'https://'+ #{fs4} +'/portal'}" target="_blank"></a></li>
+                    <li><a th:text="${btne7}" th:href="@{'https://'+ #{ca} +'/portal'}" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div class="sec3box">
+                <div th:text="${element3}" class="sechead"></div>
+                <ul class="sec_links">
+                    <li><a th:text="${btne31}" th:href="@{'https://'+ #{ondMaster} +'/portal'}" target="_blank"></a></li>
+                    <li><a th:text="${btne32}" th:href="@{'https://'+ #{ondPlayground} +'/portal'}" target="_blank"></a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!---------Content 1 Section Middle bottom left-------->
+    <div class="content1">
+        <h2 th:text="${sectionHeadingLB}" class="boxmiddleHeading"></h2>
+        <div class="middlecontentsection">
+            <ul class="sec_linksLower">
+                <li><a th:text="${LBelement1}" th:href="#{osoVacation}" target="_blank"></a></li>
+                <li><a th:text="${LBelement2}" th:href="#{bsseVacation}" target="_blank"></a></li>
+                <li><a th:text="${LBelement3}" th:href="#{coreCaseDetails}" target="_blank"></a></li>
+                <li><a th:text="${LBelement4}" th:href="#{dailyTasks}" target="_blank"></a></li>
+                <li><a th:text="${LBelement5}" th:href="#{environmentDetailsSheet}" target="_blank"></a></li>
+                <li><a th:text="${LBelement6}" th:href="#{commonSupportScenarioSheet}" target="_blank"></a></li>
+                <li><a th:text="${LBelement7}" th:href="#{ktSheet}" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-------Content 2 Section Middle Bottom Right----------->
+    <div class="content2">
+        <h2 th:text="${sectionHeadingRB}" class="boxmiddleHeading"></h2>
+        <div class="middlecontentsection">
+            <ul class="sec_linksLower">
+                <li><a th:text="${RBelement1}" th:href="#{devCiStatus}" target="_blank"></a></li>
+                <li><a th:text="${RBelement2}" th:href="#{k8s}" target="_blank"></a></li>
+                <li><a th:text="${RBelement3}" th:href="#{addNode}" target="_blank">A</a></li>
+                <li><a th:text="${RBelement4}" th:href="#{refreshENV}" target="_blank"></a></li>
+                <li><a th:text="${RBelement5}" th:href="#{oniCust}" target="_blank"></a></li>
+                <li><a th:text="${RBelement6}" th:href="#{dockerBkp}" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Side Bar on Left Side-->
+    <div class="lsidebar">
+
+        <div class="sidebarleftBox">
+            <h2 th:text="${sectionHeadingELB}" id="sidebarleftHeading">QUICK-LINKS</h2>
+            <div class="boxleftcontent">
+                <div class="notificationContainer">
+                    <ul class="notification_links">
+                        <p th:text="${LContent1}"></p><li><a th:text="${LClickHere}" th:href="#{iTrackPage}" target="_blank"></a></li>
+                        <p th:text="${LContent2}"></p><li><a th:text="${LClickHere}" th:href="#{branchStrategy}" target="_blank"></a></li>
+                        <p th:text="${LContent3}"></p><li><a th:text="${LClickHere}" th:href="#{onMadEnv}" target="_blank"></a></li>
+                        <p th:text="${LContent4}"></p><li><a th:text="${LClickHere}" th:href="#{pmTestCol}"></a></li>
+                        <p th:text="${LContent5}"></p><li><a th:text="${LClickHere}" th:href="#{attOSOTest}" target="_blank"></a></li>
+                        <p th:text="${LContent6}"></p><li><a th:text="${LClickHere}" th:href="#{attHTG}" target="_blank"></a></li>
+                        <p th:text="${LContent7}"></p><li><a th:text="${LClickHere}" th:href="#{engPortal}" target="_blank"></a></li>
+                        <p th:text="${LContent8}"></p><li><a th:text="${LClickHere}" th:href="#{timesheet}" target="_blank"></a></li>
+                        <p th:text="${LContent9}"></p><li><a th:text="${LClickHere}" th:href="#{aCentral}" target="_blank"></a></li>
+                        <p th:text="${LContent10}"></p><li><a th:text="${LClickHere}" th:href="#{keyClkPortal}" target="_blank"></a></li><br>
+                        <p th:text="${LContent11}"></p><li><a th:text="${LClickHere}" th:href="#{ccl}" target="_blank"></a></li><br>
+                        <p th:text="${LContent12}"></p><li><a th:text="${LClickHere}" th:href="#{nRepo}" target="_blank"></a></li><br>
+                        <p th:text="${LContent13}"></p><li><a th:text="${LClickHere}" th:href="#{gitlab}" target="_blank"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Side Bar on Right Side -->
+
+    <div class="rsidebar">
+        <!--Right Box Top-->
+        <div class="box3">
+            <h2 th:text="${sectionHeadingERS1}" id="boxrighttop"></h2>
+            <div class="righttopcontent">
+                <ul>
+                    <li><a id="b1" th:href="#{awsLogin}" target="_blank"><button th:text="${btnERB11}"></button></a></li>
+                    <li><a id="b2" th:href="#{azureLogin}" target="_blank"><button th:text="${btnERB12}"></button></a></li><br>
+                    <li><a th:href="#{citrixWorkspace}" target="_blank"><button th:text="${btnERB13}"></button></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Right Box Middle-->
+        <div class="box4">
+            <h2 th:text="${sectionHeadingERS2}" class="boxrightbottomHeading"></h2>
+            <div class="rightbottomcontent">
+                <ul>
+                    <li><a th:text="${elementERS21}" th:href="#{onMadrid}" target="_blank"></a></li>
+                    <li><a th:text="${elementERS22}" th:href="#{onTokyo}" target="_blank"></a></li>
+                </ul>
+            </div>
+            <h2 th:text="${sectionHeadingERS3}" class="boxrightbottomHeading"></h2>
+            <div class="rightbottomcontent">
+                <ul>
+                    <li><a th:text="${elementERS31}" th:href="#{amdocsNTNETReset}" target="_blank"></a></li>
+                    <li><a th:text="${elementERS32}" th:href="#{iTrackReset}" target="_blank"></a></li><br>
+                    <li><a th:text="${elementERS33}" th:href="#{awsReset}" target="_blank"></a><span id="infoSymbol">&#x1F6C8;<span th:text="${hoverERS33}" id="infoText"></span></span></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
